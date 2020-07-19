@@ -1,6 +1,6 @@
 # api.conal.tech
 
-Backend API for conal.tech - currently serving hardcoded data during development.
+Backend API for [conal.tech](conal.tech) - currently serving hardcoded data during development.
 
 To run:
 - Clone Repo
