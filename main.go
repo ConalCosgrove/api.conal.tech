@@ -18,7 +18,6 @@ type Article struct {
 }
 
 func articles(w http.ResponseWriter, r *http.Request) {
-	enableCors(&w)
 	fmt.Println("Endpoint Hit: returnAllArticles")
 	json.NewEncoder(w).Encode(Articles)
 }
@@ -26,10 +25,6 @@ func articles(w http.ResponseWriter, r *http.Request) {
 func handleRequest(port string) {
 	http.HandleFunc("/articles", articles)
 	log.Fatal(http.ListenAndServe(":"+port, nil))
-}
-
-func enableCors(w *http.ResponseWriter) {
-	(*w).Header().Set("Access-Control-Allow-Origin", "*")
 }
 
 func main() {
