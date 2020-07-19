@@ -7,3 +7,7 @@ To run:
 - `cd api.conal.tech`
 - `go build main.go`
 - `./main`
+
+## Routes: 
+- ### /articles
+   Returns a list of articles, containing their title, an image url, a slug, and a path to their location on the site.
